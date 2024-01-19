@@ -1,0 +1,9 @@
+reload = True
+bind = '0.0.0.0:8001'
+workers = 1
+threads = 3
+worker_connections = 10000
+preload_app = True
+worker_class = 'aiohttp.GunicornWebWorker'
+access_log_format = '[%a] "%r" [%s] [%b bytes] - %Tf s'
+accesslog = 'logs/main.log'

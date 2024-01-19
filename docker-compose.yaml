@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  service-api:
+    build: ..
+    restart: always
+    environment:
+      - BINOTEL_KEY=${BINOTEL_KEY}
+      - BINOTEL_SECRET=${BINOTEL_SECRET}
+      - BINOTEL_URL=${BINOTEL_URL}
+    ports:
+      - 8000:8000
+
